@@ -1,0 +1,232 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "SteeringBehavior",
+"class": "Alignment",
+"language": "GDScript",
+"path": "res://behaviors/Alignment.gd"
+}, {
+"base": "SteeringBehavior",
+"class": "Arrive",
+"language": "GDScript",
+"path": "res://behaviors/Arrive.gd"
+}, {
+"base": "State",
+"class": "AttackState",
+"language": "GDScript",
+"path": "res://behaviors/AttackState.gd"
+}, {
+"base": "SteeringBehavior",
+"class": "Avoidance",
+"language": "GDScript",
+"path": "res://behaviors/Avoidance.gd"
+}, {
+"base": "KinematicBody",
+"class": "Boid",
+"language": "GDScript",
+"path": "res://behaviors/Boid.gd"
+}, {
+"base": "SteeringBehavior",
+"class": "Cohesion",
+"language": "GDScript",
+"path": "res://behaviors/Cohesion.gd"
+}, {
+"base": "SteeringBehavior",
+"class": "Constrain",
+"language": "GDScript",
+"path": "res://behaviors/Constrain.gd"
+}, {
+"base": "State",
+"class": "DefendState",
+"language": "GDScript",
+"path": "res://behaviors/DefendState.gd"
+}, {
+"base": "State",
+"class": "DockedState",
+"language": "GDScript",
+"path": "res://behaviors/DockedState.gd"
+}, {
+"base": "State",
+"class": "FireAtTargetGlobalState",
+"language": "GDScript",
+"path": "res://behaviors/fire_at_target_global_state.gd"
+}, {
+"base": "SteeringBehavior",
+"class": "Flee",
+"language": "GDScript",
+"path": "res://behaviors/Flee.gd"
+}, {
+"base": "SteeringBehavior",
+"class": "FollowPath",
+"language": "GDScript",
+"path": "res://behaviors/FollowPath.gd"
+}, {
+"base": "SteeringBehavior",
+"class": "Harmonic",
+"language": "GDScript",
+"path": "res://behaviors/Harmonic.gd"
+}, {
+"base": "State",
+"class": "LaunchState",
+"language": "GDScript",
+"path": "res://behaviors/LaunchState.gd"
+}, {
+"base": "SteeringBehavior",
+"class": "NoiseWander",
+"language": "GDScript",
+"path": "res://behaviors/NoiseWander.gd"
+}, {
+"base": "SteeringBehavior",
+"class": "OffsetPursue",
+"language": "GDScript",
+"path": "res://behaviors/OffsetPursue.gd"
+}, {
+"base": "SteeringBehavior",
+"class": "PlayerSteering",
+"language": "GDScript",
+"path": "res://behaviors/PlayerSteering.gd"
+}, {
+"base": "SteeringBehavior",
+"class": "Pursue",
+"language": "GDScript",
+"path": "res://behaviors/Pursue.gd"
+}, {
+"base": "State",
+"class": "ReadyToLaunch",
+"language": "GDScript",
+"path": "res://behaviors/ready_to_launch.gd"
+}, {
+"base": "State",
+"class": "RetreatState",
+"language": "GDScript",
+"path": "res://behaviors/RetreatState.gd"
+}, {
+"base": "State",
+"class": "ReturnToBase",
+"language": "GDScript",
+"path": "res://behaviors/return_to_base_state.gd"
+}, {
+"base": "Node",
+"class": "School",
+"language": "GDScript",
+"path": "res://behaviors/School.gd"
+}, {
+"base": "SteeringBehavior",
+"class": "Seek",
+"language": "GDScript",
+"path": "res://behaviors/Seek.gd"
+}, {
+"base": "SteeringBehavior",
+"class": "Separation",
+"language": "GDScript",
+"path": "res://behaviors/Separation.gd"
+}, {
+"base": "Node",
+"class": "SpineAnimator",
+"language": "GDScript",
+"path": "res://behaviors/SpineAnimator.gd"
+}, {
+"base": "Node",
+"class": "State",
+"language": "GDScript",
+"path": "res://behaviors/State.gd"
+}, {
+"base": "Node",
+"class": "StateMachine",
+"language": "GDScript",
+"path": "res://behaviors/StateMachine.gd"
+}, {
+"base": "Node",
+"class": "SteeringBehavior",
+"language": "GDScript",
+"path": "res://behaviors/SteeringBehavior.gd"
+}, {
+"base": "Spatial",
+"class": "TrailRenderer",
+"language": "GDScript",
+"path": "res://behaviors/TrailRender.gd"
+}, {
+"base": "Node",
+"class": "Utils",
+"language": "GDScript",
+"path": "res://behaviors/Utils.gd"
+}, {
+"base": "SteeringBehavior",
+"class": "Wander",
+"language": "GDScript",
+"path": "res://behaviors/Wander.gd"
+} ]
+_global_script_class_icons={
+"Alignment": "",
+"Arrive": "",
+"AttackState": "",
+"Avoidance": "",
+"Boid": "",
+"Cohesion": "",
+"Constrain": "",
+"DefendState": "",
+"DockedState": "",
+"FireAtTargetGlobalState": "",
+"Flee": "",
+"FollowPath": "",
+"Harmonic": "",
+"LaunchState": "",
+"NoiseWander": "",
+"OffsetPursue": "",
+"PlayerSteering": "",
+"Pursue": "",
+"ReadyToLaunch": "",
+"RetreatState": "",
+"ReturnToBase": "",
+"School": "",
+"Seek": "",
+"Separation": "",
+"SpineAnimator": "",
+"State": "",
+"StateMachine": "",
+"SteeringBehavior": "",
+"TrailRenderer": "",
+"Utils": "",
+"Wander": ""
+}
+
+[application]
+
+config/name="A Psychedelic Toy"
+config/icon="res://icon.png"
+
+[autoload]
+
+DebugDraw="*res://addons/debug_draw_3d/debug_draw.gd"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/debug_draw_3d/plugin.cfg" )
+
+[gdnative]
+
+singletons=[ "res://addons/godot-openxr/config/godot_openxr.gdnlib" ]
+
+[gui]
+
+common/drop_mouse_on_gui_input_disabled=true
+
+[mono]
+
+project/assembly_name="PsychedelicToys"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

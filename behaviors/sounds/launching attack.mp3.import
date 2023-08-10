@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/launching attack.mp3-e95c5fe8f4222da11bddb99f64ad5d85.mp3str"
+
+[deps]
+
+source_file="res://behaviors/sounds/launching attack.mp3"
+dest_files=[ "res://.import/launching attack.mp3-e95c5fe8f4222da11bddb99f64ad5d85.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

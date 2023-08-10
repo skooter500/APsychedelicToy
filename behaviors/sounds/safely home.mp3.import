@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/safely home.mp3-b95a4cb8c5002dce6fcc5a86888bb582.mp3str"
+
+[deps]
+
+source_file="res://behaviors/sounds/safely home.mp3"
+dest_files=[ "res://.import/safely home.mp3-b95a4cb8c5002dce6fcc5a86888bb582.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
