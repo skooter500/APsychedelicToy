@@ -6,12 +6,10 @@ export var angular_damping:float = 20
 				
 var bones = [] 
 var offsets = [] 
-var rotations = []
 
 func calculateOffsets():
 	bones.clear()
 	offsets.clear()	
-	rotations.clear()
 	for i in bonePaths.size():
 		var bone = get_node(bonePaths[i])
 		bones.push_back(bone)
@@ -19,7 +17,6 @@ func calculateOffsets():
 			var offset = bones[i].global_transform.origin - bones[i-1].global_transform.origin
 			offset = bones[i-1].global_transform.basis.xform_inv(offset)
 			offsets.push_back(offset)
-			rotations.push_back(bones[i].transform.basis)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -45,7 +42,7 @@ func _physics_process(delta):
 		
 		# Why?
 		var target_rot = prev.global_transform.looking_at(next.global_transform.origin, prev.global_transform.basis.y).basis.orthonormalized()			
-		target_rot = target_rot * rotations[i]
+		# var next_rot = nextRot.slerp(prevRot, angular_damping * delta).orthonormalized()
 		 
 		next.global_transform.basis = next.global_transform.basis.slerp(target_rot, angular_damping * delta).orthonormalized()
 		

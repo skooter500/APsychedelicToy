@@ -1,7 +1,7 @@
 [gd_scene load_steps=22 format=2]
 
-[ext_resource path="res://navmesh.gd" type="Script" id=1]
-[ext_resource path="res://particle.png" type="Texture" id=2]
+[ext_resource path="res://behaviors/navmesh.gd" type="Script" id=1]
+[ext_resource path="res://behaviors/particle.png" type="Texture" id=2]
 [ext_resource path="res://addons/Trail/trail_3d.gd" type="Script" id=3]
 [ext_resource path="res://assets/trail_2.png" type="Texture" id=4]
 [ext_resource path="res://assets/NotoSansUI_Regular.ttf" type="DynamicFontData" id=5]

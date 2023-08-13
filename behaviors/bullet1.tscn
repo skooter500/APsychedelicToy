@@ -1,9 +1,9 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://Bullet.gd" type="Script" id=1]
-[ext_resource path="res://TrailRender.gd" type="Script" id=2]
-[ext_resource path="res://trail_width_curve.tres" type="Curve" id=3]
-[ext_resource path="res://Blue.tres" type="Material" id=4]
+[ext_resource path="res://behaviors/Bullet.gd" type="Script" id=1]
+[ext_resource path="res://behaviors/TrailRender.gd" type="Script" id=2]
+[ext_resource path="res://behaviors/trail_width_curve.tres" type="Curve" id=3]
+[ext_resource path="res://behaviors/Blue.tres" type="Material" id=4]
 [ext_resource path="res://sounds/Laser_Shoot26.wav" type="AudioStream" id=5]
 
 [sub_resource type="BoxShape" id=2]

@@ -1,8 +1,8 @@
 [gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://navigation.gd" type="Script" id=1]
-[ext_resource path="res://map.png" type="Texture" id=2]
-[ext_resource path="res://character.png" type="Texture" id=3]
+[ext_resource path="res://behaviors/map.png" type="Texture" id=2]
+[ext_resource path="res://behaviors/character.png" type="Texture" id=3]
 [ext_resource path="res://addons/Trail/trail_2d.gd" type="Script" id=4]
 [ext_resource path="res://assets/trail_1_a.png" type="Texture" id=5]
 [ext_resource path="res://assets/NotoSansUI_Regular.ttf" type="DynamicFontData" id=6]

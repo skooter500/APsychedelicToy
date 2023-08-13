@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/discfish.obj-cea0c0fd95d81611ce019059ef74a955.mesh"
+
+[deps]
+
+files=[ "res://.import/discfish.obj-cea0c0fd95d81611ce019059ef74a955.mesh" ]
+
+source_file="res://models/discfish.obj"
+dest_files=[ "res://.import/discfish.obj-cea0c0fd95d81611ce019059ef74a955.mesh", "res://.import/discfish.obj-cea0c0fd95d81611ce019059ef74a955.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

@@ -1,11 +1,11 @@
 [gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://CamFollow.gd" type="Script" id=1]
+[ext_resource path="res://behaviors/CamFollow.gd" type="Script" id=1]
 [ext_resource path="res://wall.gd" type="Script" id=2]
-[ext_resource path="res://Ground.tres" type="Material" id=3]
-[ext_resource path="res://Box.tscn" type="PackedScene" id=4]
-[ext_resource path="res://SceneSwitcher.tscn" type="PackedScene" id=5]
-[ext_resource path="res://tank.tscn" type="PackedScene" id=6]
+[ext_resource path="res://behaviors/Ground.tres" type="Material" id=3]
+[ext_resource path="res://behaviors/Box.tscn" type="PackedScene" id=4]
+[ext_resource path="res://behaviors/SceneSwitcher.tscn" type="PackedScene" id=5]
+[ext_resource path="res://behaviors/tank.tscn" type="PackedScene" id=6]
 
 [sub_resource type="Environment" id=5]
 background_mode = 1
